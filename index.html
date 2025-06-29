@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>moderndev.de | Moderne Softwareentwicklung & IT-Beratung</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
     <meta name="description" content="Tobias Daub – Experte für agile Softwareentwicklung und Softwarearchitektur">
     <meta name="keywords"
           content="Agile Softwareentwicklung mit Scrum, Agile Softwareentwicklung Beratung, Softwarearchitektur Experte Deutschland, IT-Beratung für moderne Softwareentwicklung, Softwarearchitekturen für Microservices, DevOps und CI/CD Automatisierung, IT-Sicherheit für Webanwendungen, Java und Spring Boot Entwicklung, Microservices mit Kubernetes und Helm, Skalierbare Architekturen mit Spring Boot, Deploymentstrategien mit Docker und Kubernetes, Migration von Legacy-Systemen, Testautomatisierung mit Java, Testautomatisierung mit Python, Testautomatisierung mit Testcafe, Systemintegration mit Apache Camel, Enterprise Integration mit Apache Camel">
@@ -30,11 +31,11 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="#contact" id="contact-nav"></a></li>
                 <li class="nav-item"><a class="nav-link" href="#about" id="about-nav"></a></li>
                 <li class="nav-item"><a class="nav-link" href="#services" id="services-nav"></a></li>
                 <li class="nav-item"><a class="nav-link" href="#trainings" id="trainings-nav"></a></li>
                 <li class="nav-item"><a class="nav-link" href="#references" id="references-nav"></a></li>
-                <li class="nav-item"><a class="nav-link" href="#contact" id="contact-nav"></a></li>
             </ul>
         </div>
     </div>
@@ -43,6 +44,22 @@
 <header class="bg-primary text-white text-center py-5">
     <div class="container" id="header-text"></div>
 </header>
+
+<section id="contact" class="bg-light py-5">
+    <div class="container">
+        <div class="d-flex justify-content-center gap-4">
+            <a href="https://www.linkedin.com/in/tobias-daub-98219313a" target="_blank" aria-label="LinkedIn">
+                <i class="bi bi-linkedin fs-4"></i>
+            </a>
+            <a href="https://mastodon.social/@moderndev" target="_blank" rel="me" aria-label="Mastodon">
+                <i class="bi bi-chat-dots-fill fs-4"></i>
+            </a>
+            <a href="mailto:hello@moderndev.de" ria-label="Email">
+                <i class="bi bi-envelope-fill fs-4"></i>
+            </a>
+        </div>
+    </div>
+</section>
 
 <section id="about" class="py-5">
     <div class="container">
@@ -96,13 +113,6 @@
     </div>
 </section>
 
-<section id="contact" class="bg-light py-5">
-    <div class="container">
-        <h3 id="contact-header"></h3>
-        <p id="contact-text"></p>
-    </div>
-</section>
-
 <footer class="bg-dark text-white text-center py-3">
     <div class="container" id="footer-content"></div>
 </footer>
@@ -110,8 +120,8 @@
 <script>
     const translations = {
         "de": {
-            "header-text": "<h1>moderndev.de | Moderne Softwareentwicklung & IT-Beratung</h1><h2>Mehr Effizienz für Ihre Inhouse-Entwicklung</h3>",
-            "footer-content": "<p>&copy;2025 Tobias Daub. Finanzamt: Hamburg-Barmbek-Uhlenhorst.</p><p>Alle Rechte vorbehalten. Jegliches Material auf dieser Seite ist urheberrechtlich geschützt, seine Verwendung oder Reproduktion erfordert exklusive schriftliche Erlaubnis. Ich übernehme keinerlei Verantwortung für Informationen und Inhalte, die auf extern verlinkten Webseiten abgebildet sind.</p><p>Gebaut mit <a href=\"https://getbootstrap.com\" target=\"_blank\">Bootstrap</a>, gehostet über <a href=\"https://pages.github.com\" target=\"_blank\">Github Pages</a>.</p>",
+            "header-text": "<h1>Tobias Daub | Moderne Softwareentwicklung & Best Practices</h1>",
+            "footer-content": "<p>&copy;2025 Tobias Daub. Finanzamt: Hamburg-Barmbek-Uhlenhorst.</p><p>Alle Rechte vorbehalten. Jegliches Material auf dieser Seite ist urheberrechtlich geschützt, seine Verwendung oder Reproduktion erfordert exklusive schriftliche Erlaubnis. Ich übernehme keinerlei Verantwortung für Informationen und Inhalte, die auf extern verlinkten Webseiten abgebildet sind.</p>",
             "services-nav": "Dienstleistungen",
             "services-header": "Dienstleistungen",
             "services-text": "<ul><li>Softwareentwicklung mit Java, Spring Boot, Python und TypeScript</li><li>Konzeption von pragmatischen Architekturen</li><li>Architektur-Reviews</li><li>Architekturen für Microservice-Umgebungen</li><li>Integration und Migration von Legacy-Systemen</li><li>Prinzipien für die Erstellung von wartbarem Code</li><li>Testautomatisierung und Strategien (JUnit, Python unittest, TestCafe)</li><li>Methoden der agilen Softwareentwicklung: Minimal Viable Product, Test Driven Development, Pair Programming</li><li>Continuous Integration & Continuous Delivery Strategien für eine kürzere Time-to-Market</li><li>IT-Sicherheit und Best Practices</li><li>Technologieberatung und -auswahl</li></ul>",
@@ -123,13 +133,11 @@
             "about-nav": "Über mich",
             "about-header": "Über mich",
             "about-content": "<p>Mein Weg in die IT-Industrie begann 1997 mit einem Praktikum, in dem ich ein gutes Dutzend PCs zusammenbaute und mit Windows 95 konfigurierte. Fasziniert von Hard- und Software folgten weitere Praktika und schließlich eine Ausbildung zum Fachinformatiker für Systemintegration - in der ich ungeplant das Programmieren mit C++ und Python erlernte.</p><p>Neben meiner Berufsausbildung habe ich einen Bachelor- und Masterabschluss in Informatik mit den Schwerpunkten Application Engineering & IT-Security. Seit 2016 bin ich zertifizierter iSAQB® Certified Professional for Software Architecture.</p><p>Mit über 15 Jahren Erfahrung in der Softwareentwicklung, insbesondere in Projekten für namhafte Unternehmen, bringe ich umfassendes Know-how mit. In den letzten 10 Jahren habe ich intensiv mit agilen Teams nach Scrum gearbeitet und war maßgeblich an der Entwicklung, Konzeption und dem Betrieb moderner Softwarelösungen beteiligt. Meine Expertise umfasst den gesamten Software-Lifecycle – von der Entwicklung neuer Anwendungen bis zur Ablösung bestehender Systeme mit unterschiedlichsten Technologien. Außerdem bin ich als freiberuflicher Dozent für Themen rund um Softwareentwicklung tätig.</p><p>Mein Meyers-Briggs Persönlichkeitstyp ist ENTP (Extraversion, Intuition, Thinking, Perceiving). Ich bin ein kreativer Problemlöser mit einem Blick für Chancen und einem strategischen Verständnis für komplexe Systeme. Herausforderungen treiben mich an – ich entwickle schnell innovative Lösungen und setze sie mit Energie um. Ich liebe Abwechslung, spannende Herausforderungen und die Möglichkeit, Dinge voranzutreiben.</p>",
-            "contact-nav": "Kontakt",
-            "contact-header": "Kontakt",
-            "contact-text": "Hast du eine spannende Projektidee, brauchst eine unabhängige Meinung oder interessierst dich für eine meiner Schulungen? Dann schreib mir einfach eine E-Mail an <a href=\"mailto:hello@moderndev.de\">hello@moderndev.de</a> oder vernetze dich mit mir auf <a href=\"https://www.linkedin.com/in/tobias-daub-98219313a/\" target=\"_blank\">LinkedIn</a>. Ich freue mich, von dir zu hören!"
+            "contact-nav": "Kontakt"
         },
         "en": {
-            "header-text": "<h1>moderndev.de | Modern Software Development & IT Consulting</h1><h2>More efficiency for your in-house development</h2>",
-            "footer-content": "<p>&copy;2025 Tobias Daub. Tax office: Hamburg-Barmbek-Uhlenhorst (Germany).</p><p>All rights reserved. All material on this site is protected by copyright, and its use or reproduction requires exclusive written permission. I assume no responsibility for information and content displayed on externally linked websites.</p><p>Built with <a href=\"https://getbootstrap.com\" target=\"_blank\">Bootstrap</a>, hosted via <a href=\"https://pages.github.com\" target=\"_blank\">Github Pages</a>.</p>",
+            "header-text": "<h1>moderndev.de | Modern Software Development & Best Practices</h1>",
+            "footer-content": "<p>&copy;2025 Tobias Daub. Tax office: Hamburg-Barmbek-Uhlenhorst (Germany).</p><p>All rights reserved. All material on this site is protected by copyright, and its use or reproduction requires exclusive written permission. I assume no responsibility for information and content displayed on externally linked websites.</p>",
             "services-nav": "Services",
             "services-header": "Services",
             "services-text": "<ul><li>Software development with Java, Spring Boot, Python, and TypeScript</li> <li>Design of pragmatic architectures</li> <li>Architecture reviews</li> <li>Architectures for microservice environments</li> <li>Integration and migration of legacy systems</li> <li>Principles for writing maintainable code</li> <li>Test automation and strategy (JUnit, Python unittest, TestCafe)</li> <li>Agile software development methods: Minimal Viable Product, Test Driven Development, Pair Programming</li> <li>Continuous Integration & Continuous Delivery strategies for faster time-to-market</li> <li>IT security and best practices</li> <li>Technology consulting and selection</li></ul>",
@@ -141,9 +149,7 @@
             "about-nav": "About me",
             "about-header": "About me",
             "about-content": "<p>My journey into the IT industry began in 1997 with an internship where I assembled a dozen PCs and configured them with Windows 95. Fascinated by hardware and software, I pursued further internships and eventually completed an apprenticeship as an IT specialist for system integration, where I unexpectedly learned to program with C++ and Python.</p><p>In addition to my vocational training, I earned a Bachelor's and Master's degree in Computer Science with a focus on Application Engineering & IT Security. Since 2016, I have been a certified iSAQB® Certified Professional for Software Architecture.</p><p>With over 15 years of experience in software development, particularly in projects for renowned companies, I bring comprehensive expertise. Over the past 10 years, I have worked intensively with agile teams using Scrum and have been instrumental in the development, conception, and operation of modern software solutions. My expertise spans the entire software lifecycle – from developing new applications to replacing existing systems with diverse technologies. Additionally, I work as a freelance lecturer on topics related to software development.</p><p>My Myers-Briggs personality type is ENTP (Extraversion, Intuition, Thinking, Perceiving). I am a creative problem solver with an eye for opportunities and a strategic understanding of complex systems. Challenges drive me – I quickly develop innovative solutions and implement them with energy. I love variety, exciting challenges, and the opportunity to advance things.</p>",
-            "contact-nav": "Contact",
-            "contact-header": "Contact",
-            "contact-text": "Do you have an exciting project idea, need an independent opinion, or are you interested in one of my training sessions? Just send me an email at <a href=\"mailto:hello@moderndev.de\">hello@moderndev.de</a> or connect with me on <a href=\"https://www.linkedin.com/in/tobias-daub-98219313a/\" target=\"_blank\">LinkedIn</a>. I look forward to hearing from you!"
+            "contact-nav": "Contact"
         }
     };
 
